@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Body Styles */
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll during animations */
+        }
+        
+        /* Container for content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles with Animation */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 80px 0 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Background animation for header */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #2c3e50, #34495e, #3498db, #2980b9);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            z-index: 0;
+        }
+        
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Main Profile Image - CUSTOMIZE with Animation */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+            object-fit: cover;
+            animation: profilePulse 3s ease-in-out infinite;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        @keyframes profilePulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            }
+        }
+        
+        /* Name and title animations */
+        #your-name, #your-title {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        #your-name {
+            animation-delay: 0.5s;
+        }
+        
+        #your-title {
+            animation-delay: 0.8s;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Navigation Menu with Animation */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 8px 15px;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        nav ul li:nth-child(1) a {
+            animation-delay: 0.1s;
+        }
+        
+        nav ul li:nth-child(2) a {
+            animation-delay: 0.2s;
+        }
+        
+        nav ul li:nth-child(3) a {
+            animation-delay: 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Section Styles with Animations */
+        section {
+            padding: 60px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: #3498db;
+            transition: width 1s;
+        }
+        
+        section.visible .section-title::after {
+            width: 100px;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: #fff;
+        }
+        
+        /* Skills Section with Animation */
+        .skills {
+            background-color: #f9f9f9;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .skill-item {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            width: 150px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        section.visible .skill-item {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        
+        section.visible .skill-item:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        section.visible .skill-item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        section.visible .skill-item:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        section.visible .skill-item:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        section.visible .skill-item:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        
+        section.visible .skill-item:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Contact Section Animation */
+        .contact {
+            background-color: #f9f9f9;
+        }
+        
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s;
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        
+        section.visible .contact-form input,
+        section.visible .contact-form textarea {
+            animation: fadeInLeft 0.5s ease forwards;
+        }
+        
+        section.visible .contact-form input:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        section.visible .contact-form input:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        section.visible .contact-form input:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        section.visible .contact-form textarea {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+            outline: none;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+        }
+        
+        .contact-form button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            transform: scale(0);
+            opacity: 0;
+        }
+        
+        section.visible .contact-form button {
+            animation: scaleIn 0.5s ease forwards;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .contact-form button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Footer Styles with Animation */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #2c3e50, #34495e, #3498db, #2980b9);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            z-index: 0;
+            opacity: 0.6;
+        }
+        
+        footer .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: all 0.3s;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            opacity: 0;
+        }
+        
+        footer.visible .social-links a {
+            animation: socialFadeIn 0.5s ease forwards;
+        }
+        
+        footer.visible .social-links a:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        footer.visible .social-links a:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        footer.visible .social-links a:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        
+        footer.visible .social-links a:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes socialFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .social-links a:hover {
+            background-color: #3498db;
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        footer p {
+            opacity: 0;
+        }
+        
+        footer.visible p {
+            animation: fadeIn 0.5s ease forwards;
+            animation-delay: 0.5s;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+        
+        /* Typing animation for about section */
+        .typing-effect {
+            border-right: 3px solid #3498db;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(40, end) forwards, blinking 0.75s step-end infinite;
+            opacity: 0;
+        }
+        
+        section.visible .typing-effect {
+            opacity: 1;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blinking {
+            from, to { border-color: transparent }
+            50% { border-color: #3498db }
+        }
+        
+        /* Hover effect for nav items */
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #3498db;
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+        
+        nav ul li a:hover::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section - CUSTOMIZE NAME AND TITLE -->
+    <header>
+        <div class="container">
+            <!-- Change the src to your profile image URL -->
+            <img src="/api/placeholder/150/150" alt="Profile Image" class="profile-img">
+            <!-- Change your name -->
+            <h1 id="your-name">kevis Mevada </h1>
+            <!-- Change your profession/title -->
+            <p id="your-title">Web Developer & Designer</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- About Section - CUSTOMIZE YOUR BIO -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div id="about-content">
+                <!-- Change this to your personal bio -->
+                <p class="typing-effect">Hello! I'm kevis Mevada, a passionate web developer with 5 years of experience in creating beautiful and functional websites.</p>
+                <p>I specialize in front-end development and have a strong background in UI/UX design. My approach combines technical expertise with an eye for aesthetics to deliver exceptional user experiences.</p>
+                <p>When I'm not coding, you can find me hiking in the mountains or experimenting with new recipes in the kitchen. I believe in continuous learning and am always exploring new technologies and design trends.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section - CUSTOMIZE YOUR SKILLS -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container" id="skills-list">
+                <!-- Add or remove skill items as needed -->
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX</h3>
+                </div>
+                <div class="skill-item">
+                    <h3>Responsive Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer - CUSTOMIZE YOUR SOCIAL LINKS -->
+    <footer>
+        <div class="container">
+            <div class="social-links" id="social-links">
+                <!-- Add your social media links -->
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+            <!-- Update copyright with your name -->
+            <p>&copy; <span id="current-year">2025</span> kevis Mevada Doe. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Automatically update the year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Simple form handling (you'll need a backend service to actually send emails)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted! (Note: This is just a demo - no email will be sent without backend integration)');
+            this.reset();
+        });
+        
+        // Scroll animation for sections
+        const sections = document.querySelectorAll('section');
+        const footer = document.querySelector('footer');
+        
+        function checkVisibility() {
+            const triggerBottom = window.innerHeight * 0.8;
+            
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerBottom) {
+                    section.classList.add('visible');
+                }
+            });
+            
+            const footerTop = footer.getBoundingClientRect().top;
+            if (footerTop < triggerBottom) {
+                footer.classList.add('visible');
+            }
+        }
+        
+        // Check visibility on page load
+        window.addEventListener('load', checkVisibility);
+        
+        // Check visibility on scroll
+        window.addEventListener('scroll', checkVisibility);
+    </script>
+</body>
+</html>
