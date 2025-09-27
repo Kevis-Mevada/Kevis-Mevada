@@ -1,6 +1,6 @@
 # Hi there, I'm Kevis Mevada 👋
 
-[cite_start]I'm a final-year Computer Engineering student from Ahmedabad, India, with a passion for building scalable backend systems and solving complex algorithmic problems[cite: 1, 9].
+I'm a final-year Computer Engineering student from Ahmedabad, India, with a passion for building scalable backend systems and solving complex algorithmic problems[cite: 1, 9].
 
 - 🌱 **I’m currently learning:** Advanced concepts in system design and machine learning.
 - 👯 **I’m looking to collaborate on:** Full-stack or backend development projects, especially using Node.js or Java.
