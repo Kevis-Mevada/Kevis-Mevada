@@ -1,4 +1,3 @@
-<!-- Header Section -->
 <div align="center">
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40px" alt="👋"/>
   <h1>Hi there, I'm Kevis Mevada</h1>
@@ -26,35 +25,57 @@
 ---
 
 ## 💻 Tech Stack & Skills  
+(Skills optimized for my target roles)
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=java,cpp,python,nodejs,express,react,flutter,mysql,git,docker,postman&perline=6" />
+  <img src="https://skillicons.dev/icons?i=python,postgresql,java,mysql,nodejs,git,docker,postman,express,react,flutter&perline=6" />
 </div>
 
 ---
 
 ## 🚀 Projects  
+(These projects are from my academic and personal learning journey)
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<h3 align="center">HacktosSkill</h3>
+<h3 align="center">Agro-Bazaar (E-Commerce)</h3>
 <div align="center">
-<a href="https://github.com/Kevis-Mevada/HacktosSkill" target="_blank">
+<a href="[LINK_TO_YOUR_AGRO_BAZAAR_REPO]" target="_blank">
 <img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-<p><em>A platform built with TypeScript to help students improve their technical and soft skills through challenges.</em></p>
+<p><em>Full-stack PHP & MySQL web platform enabling farmers to sell products directly to buyers. Integrated Razorpay API.</em></p>
 </div>
 </td>
 
 <td width="50%" valign="top">
-<h3 align="center">Skill-Swap-Platform</h3>
+<h3 align="center">Task Management App</h3>
 <div align="center">
-<a href="https://github.com/Kevis-Mevada/SKILL-SWAP-PLATFORM" target="_blank">
+<a href="[LINK_TO_YOUR_TASK_APP_REPO]" target="_blank">
 <img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
-<p><em>A PHP-based web app that allows users to swap skills and collaborate on real-world learning.</em></p>
+<p><em>A Flutter & Firebase mobile app for task management with real-time data synchronization and user authentication.</em></p>
 </div>
 </td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+<h3 align="center">Backend RESTful API</h3>
+<div align="center">
+<a href="[LINK_TO_YOUR_NODE_API_REPO]" target="_blank">
+<img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<p><em>RESTful API service built with Node.js, Express.js, and MongoDB to manage backend operations for a web app.</em></p>
+</div>
+</td>
+
+<td width="50%" valign="top">
+<h3 align="center">More Projects...</h3>
+<div align="center">
+<p><em>(Including 'HacktosSkill' and 'Skill-Swap' which can be found in my repositories tab.)</em></p>
+</div>
+</td>
+
 </tr>
 </table>
 
@@ -64,6 +85,5 @@
 <div align="center">
 
 ![Kevis's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kevis-Mevada&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kevis-Mevada&layout=compact&theme=radical)  
 
 </div>
