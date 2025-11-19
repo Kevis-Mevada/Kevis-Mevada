@@ -27,7 +27,7 @@
 ## 💻 Tech Stack & Skills  
 (Skills optimized for my target roles)
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,postgresql,java,mysql,nodejs,git,docker,postman,express,react,flutter&perline=6" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,php,java,python,firebase,mongodb,mysql,nodejs,rect,git,docker,postman,express,flutter&perline=6" />
 </div>
 
 ---
