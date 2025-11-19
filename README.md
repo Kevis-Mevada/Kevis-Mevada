@@ -40,7 +40,7 @@
 <td width="50%" valign="top">
 <h3 align="center">Agro-Bazaar (E-Commerce)</h3>
 <div align="center">
-<a href="[LINK_TO_YOUR_AGRO_BAZAAR_REPO]" target="_blank">
+<a href="https://github.com/Kevis-Mevada/AgroBazaarmaster.git" target="_blank">
 <img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 <p><em>Full-stack PHP & MySQL web platform enabling farmers to sell products directly to buyers. Integrated Razorpay API.</em></p>
@@ -50,7 +50,7 @@
 <td width="50%" valign="top">
 <h3 align="center">Task Management App</h3>
 <div align="center">
-<a href="[LINK_TO_YOUR_TASK_APP_REPO]" target="_blank">
+<a href="https://github.com/Kevis-Mevada/Todo_List.git" target="_blank">
 <img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 <p><em>A Flutter & Firebase mobile app for task management with real-time data synchronization and user authentication.</em></p>
@@ -58,25 +58,6 @@
 </td>
 </tr>
 
-<tr>
-<td width="50%" valign="top">
-<h3 align="center">Backend RESTful API</h3>
-<div align="center">
-<a href="[LINK_TO_YOUR_NODE_API_REPO]" target="_blank">
-<img src="https://img.shields.io/badge/-View_Repo-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<p><em>RESTful API service built with Node.js, Express.js, and MongoDB to manage backend operations for a web app.</em></p>
-</div>
-</td>
-
-<td width="50%" valign="top">
-<h3 align="center">More Projects...</h3>
-<div align="center">
-<p><em>(Including 'HacktosSkill' and 'Skill-Swap' which can be found in my repositories tab.)</em></p>
-</div>
-</td>
-
-</tr>
 </table>
 
 ---
