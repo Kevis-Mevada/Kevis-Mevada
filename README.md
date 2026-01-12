@@ -8,10 +8,10 @@
 
 ## 👨‍💻 About Me  
 - 🎓 **Final-year Computer Engineering student** at Ahmedabad Institute of Technology.
-- 👨‍🏫 Former **Technical Instructor** at Icon Academy, training 120+ students in Python, Java, and C++.
-- 🚀 **Team Leader for Team "onestep"** – leading AI-based projects and hackathon initiatives.
+- 👨‍🏫 **Technical Instructor** at Icon Academy (C-DAC Authorized Center), trained 120+ students.
+- 🚀 **Team Leader for Team "onestep"** – specialized in AI-driven full-stack solutions.
 - 🏆 **1st Place Winner** of the INSCRYPTION Coding Competition (GDG On Campus, 2025).
-- 🌱 Currently focused on **Generative AI, Django, and Flutter Development**.
+- 🌱 Currently deep-diving into **Generative AI, Large Language Models, and System Design**.
 - 🎯 Career Goal: To contribute to impactful software engineering roles and large-scale applications.
 
 ---
@@ -31,7 +31,7 @@
 
 ---
 
-## 🚀 Projects  
+## 🚀 Featured Projects  
 
 <table width="100%">
 <tr>
@@ -56,13 +56,6 @@
 </td>
 </tr>
 </table>
-
----
-
-## 📊 GitHub Stats  
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kevis-mevada&show_icons=true&theme=radical" alt="Kevis's GitHub Stats" />
-</div>
 
 ---
 
