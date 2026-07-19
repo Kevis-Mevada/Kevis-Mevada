@@ -6,83 +6,131 @@
 
 ---
 
-## 👨‍💻 About Me
+# 👨‍💻 About Me
 
-- 🎓 B.E. in Computer Engineering from **Ahmedabad Institute of Technology**
-- 💻 Passionate about Java Backend Development and building real-world applications
-- 🌱 Currently learning **Spring Boot**, Backend Development, and Software Engineering
-- 🚀 Interested in developing scalable and efficient web applications
+- 🎓 B.E. in Computer Engineering from Ahmedabad Institute of Technology
+- 💻 Passionate about Java Backend Development and Software Engineering
+- 🌱 Currently learning Spring Boot, Backend Development, and System Design
+- 🚀 Interested in building scalable and real-world applications
 - 🤝 Always eager to learn new technologies and collaborate on exciting projects
 
 ---
 
-## 🛠️ Technical Skills
+# 🛠️ Technical Skills
 
-### Languages
+### 💻 Languages
 - Java (Core & Advanced)
 - SQL
 - HTML
 - CSS
+- JavaScript
 
-### Frameworks
+### ⚙️ Frameworks
 - Spring Boot
 
-### Database
+### 🗄️ Database
 - MySQL
 
-### Developer Tools
+### 🧰 Developer Tools
 - Git
 - GitHub
 - Eclipse
 - VS Code
+- Maven
 
 ---
 
-## 🚀 Featured Project
+# 🚀 Featured Projects
 
-### 🐾 Adoptify – Animal Rescue & Rehoming Platform
-🔗 **Repository:** *(Add your GitHub repository link here)*
+## 🐾 Adoptify – Animal Rescue & Rehoming Platform
+
+🔗 **Repository:** https://github.com/Kevis-Mevada/Adoptify
 
 **Tech Stack:** Java, Spring Boot, HTML, CSS, JavaScript, MySQL
 
 ### Features
-- 🐶 Platform connecting animal owners, adopters, NGOs, and administrators
-- 🔐 Secure user authentication and role-based access
-- 📩 Adoption request workflow with email notifications
-- 🚨 Rescue reporting and management system
-- 🗄️ MySQL database designed using JDBC
+- 🐶 Animal adoption and rescue platform
+- 🔐 Secure authentication with role-based access
+- 📩 Adoption workflow and email notifications
+- 🚨 Rescue request management
+- 🗄️ MySQL database using JDBC
 - 📱 Responsive user interface
 
 ---
 
-## 🏆 Achievements
+## 🌾 AgroBazaar – Farmer E-Commerce Platform
 
-- 🥇 Winner in a Coding Competition at College
-- 🥈 Runner-Up in a Hackathon organized by Google Developer Group On Campus AIT
-- 🚀 Selected for the Final Round of a Hackathon organized by Google Developer Group Gandhinagar
+🔗 **Repository:** https://github.com/Kevis-Mevada/AgroBazaarmaster
+
+**Tech Stack:** HTML, CSS, JavaScript, Bootstrap, Firebase
+
+### Features
+- 🛒 Online marketplace for farmers
+- 📦 Product management
+- 👨‍🌾 Direct farmer-to-customer interaction
+- 📱 Responsive UI
+- 🔍 Easy product browsing
 
 ---
 
-## 📜 Certifications
+## 🩺 OneStep – Medical Voice AI Agent
+
+🔗 **Repository:** https://github.com/Kevis-Mevada/OneStep_Medical_Voice_AI_Agent
+
+**Tech Stack:** Python, Generative AI, LLMs
+
+### Features
+- 🎙️ Voice-based medical assistant
+- 🤖 Large Language Model integration
+- 📝 Medical report generation
+- 🔊 Speech-to-Text & Text-to-Speech
+- 🔒 Secure authentication
+
+---
+
+# 🏆 Achievements
+
+- 🥇 Winner in Coding Competition at College
+- 🥈 Runner-Up in Google Developer Group On Campus AIT Hackathon
+- 🚀 Finalist in Google Developer Group Gandhinagar Hackathon
+
+---
+
+# 📜 Certifications
 
 - ☁️ Oracle Cloud Infrastructure 2025 Certified Generative AI Professional
 - 🐍 NPTEL – Python for Data Science
 
 ---
 
-## 📊 GitHub Stats
+# 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Kevis-Mevada&show_icons=true&theme=tokyonight" />
-  <br>
+</p>
+
+<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Kevis-Mevada&theme=tokyonight" />
-  <br>
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kevis-Mevada&layout=compact&theme=tokyonight" />
 </p>
 
 ---
 
-## 📫 Connect With Me
+# 🌱 Currently Learning
+
+- Spring Boot
+- REST APIs
+- JDBC & MySQL
+- Data Structures & Algorithms
+- System Design
+- Generative AI
+
+---
+
+# 📫 Connect With Me
 
 <p align="center">
   <a href="mailto:kevis.mevada@gmail.com">
@@ -102,8 +150,8 @@
 
 <div align="center">
 
-### 💡 "Code. Learn. Build. Repeat."
+### 💡 *"Code. Learn. Build. Repeat."*
 
-⭐ Feel free to explore my repositories and connect with me!
+⭐ Thanks for visiting my profile! Feel free to explore my repositories and connect with me.
 
 </div>
