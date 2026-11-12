@@ -64,26 +64,7 @@ A framework-free full-stack recruitment platform structured with explicit `MVC`,
 | **Security & Data** | Session-based authentication, role-based access control (RBAC), and PostgreSQL `PreparedStatements` to guard against SQL injection |
 | **Core Features** | 6 end-to-end workflows: job posting, search, saved jobs, application tracking, applicant management, and interview scheduling |
 
-### Layered Request Blueprint
 
-```mermaid
-flowchart TD
-    A["Role-Based Portals  ·  Session Auth · RBAC"]:::slate
-    B["Controller & Service  ·  Servlets · Spring Boot · OOPS"]:::teal
-    C["DAO & Persistence  ·  JDBC PreparedStatements · Hibernate"]:::db
-    D[("Relational Database  ·  MySQL · PostgreSQL")]:::slate
-
-    A --> B
-    B --> C
-    C --> D
-
-    classDef slate fill:#0F172A,stroke:#334155,stroke-width:1.5px,color:#F8FAFC
-    classDef teal fill:#134E4A,stroke:#14B8A6,stroke-width:1.5px,color:#F0FDFA
-    classDef db fill:#1E293B,stroke:#0D9488,stroke-width:1.5px,color:#E2E8F0
-    linkStyle default stroke:#64748B,stroke-width:1.5px
-```
-
----
 
 ## Technical Stack
 
